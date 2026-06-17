@@ -1,0 +1,3 @@
+name = "hono_backend"
+description = "Works in backend/ only on Hono API routes, Drizzle schema, Turso configuration, and backend tests."
+scope = "backend/"

@@ -1,28 +1,13 @@
 {
-  "name": "Developer News",
-  "version": "0.0.1",
+  "name": "developer-digest",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "db:generate": "drizzle-kit generate",
-    "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "turbo format",
-    "typecheck": "turbo typecheck"
+    "dev": "concurrently \"pnpm --filter frontend dev\" \"pnpm --filter backend dev\"",
+    "build": "pnpm --filter backend build && pnpm --filter frontend build",
+    "lint": "pnpm --filter frontend lint && pnpm --filter backend lint"
   },
   "devDependencies": {
-    "@workspace/eslint-config": "workspace:*",
-    "@workspace/typescript-config": "workspace:*",
-    "drizzle-kit": "^0.31.10",
-    "prettier": "^3.8.3",
-    "prettier-plugin-tailwindcss": "^0.8.0",
-    "turbo": "^2.9.15",
-    "typescript": "^5"
+    "concurrently": "^8.0.0"
   },
-  "packageManager": "pnpm@10.33.4",
-  "engines": {
-    "node": ">=20"
-  }
+  "packageManager": "pnpm@10.33.4"
 }
