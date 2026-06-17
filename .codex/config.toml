@@ -1,0 +1,8 @@
+[agents.frontend_engineer]
+description = "Works only in frontend/ on Next.js App Router UI, components, styling, and client-side integration."
+
+[agents.hono_backend]
+description = "Works only in backend/ on Hono routes, Drizzle schema, migrations, Turso access, and API behavior."
+
+[agents.web_research_specialist]
+description = "Handles research, documentation lookup, and external information gathering."

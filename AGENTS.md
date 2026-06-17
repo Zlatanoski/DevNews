@@ -1,17 +1,16 @@
-# Project
+# Developer's Digest — Monorepo
 
-Next.js 15 App Router project using TypeScript, Tailwind CSS v4, and shadcn/ui.
-Package manager: pnpm. All components go in `src/components/`, pages in `src/app/`.
+## Structure
+- frontend/ — Next.js 15 App Router, Tailwind CSS, shadcn/ui. Port 3000.
+- backend/  — Hono API server, Drizzle ORM, Turso (SQLite). Port 4000.
 
 ## Subagent usage
-
-- For any UI work, component creation, or styling: spawn `frontend_engineer`
-- For any research, documentation lookup, or external information gathering: spawn `web_research_specialist`
-- Do not attempt frontend work or web research yourself — always delegate to the right agent
+- UI components, pages, styling → spawn frontend_engineer (works in frontend/ only)
+- API routes, DB schema, migrations → spawn hono_backend (works in backend/ only)
+- Research, documentation, external info → spawn web_research_specialist
 
 ## Rules
-
-- Never use the Pages Router
-- Always use TypeScript strict mode
-- Use `cn()` from `@/lib/utils` for class merging
-- Run `pnpm lint` before marking any task done
+- frontend/ never contains business logic or DB access
+- backend/ never contains UI components or Next.js imports
+- All cross-origin requests go through http://localhost:4000 in dev
+- Run pnpm lint from the root before marking any task done

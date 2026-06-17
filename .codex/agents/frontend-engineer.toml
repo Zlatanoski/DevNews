@@ -1,0 +1,3 @@
+name = "frontend_engineer"
+description = "Works in frontend/ only on Next.js UI, components, styling, and client-side API integration."
+scope = "frontend/"
