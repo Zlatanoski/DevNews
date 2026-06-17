@@ -1,8 +1,7 @@
-[agents.frontend_engineer]
-description = "Works only in frontend/ on Next.js App Router UI, components, styling, and client-side integration."
+[agents]
+max_threads = 6
+max_depth = 1
 
-[agents.hono_backend]
-description = "Works only in backend/ on Hono routes, Drizzle schema, migrations, Turso access, and API behavior."
-
-[agents.web_research_specialist]
-description = "Handles research, documentation lookup, and external information gathering."
+[mcp_servers.firecrawl]
+url = "https://mcp.firecrawl.dev/${FIRECRAWL_API_KEY}/v2/mcp"
+startup_timeout_sec = 20
