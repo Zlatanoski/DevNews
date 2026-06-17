@@ -10,6 +10,7 @@ import { ArrowRight, CalendarDays, ExternalLink, Mail } from "lucide-react"
 
 import { dailyArticles } from "@/components/digest-data"
 import { SiteNavbar } from "@/components/site-navbar"
+import { SubscribeForm } from "@/components/subscribe-form"
 
 export default function DailyPage() {
   return (
@@ -111,19 +112,7 @@ export default function DailyPage() {
                   model access, cloud capacity, and coding-agent shifts.
                 </p>
               </div>
-              <form className="flex w-full flex-col gap-3 sm:flex-row md:w-[28rem]">
-                <label className="sr-only" htmlFor="daily-email">
-                  Email address
-                </label>
-                <input
-                  id="daily-email"
-                  name="email"
-                  type="email"
-                  placeholder="you@company.com"
-                  className="h-10 min-w-0 flex-1 rounded-md border border-input bg-background px-3 py-2 text-sm shadow-xs transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                />
-                <Button type="submit">Subscribe</Button>
-              </form>
+              <SubscribeForm id="daily-email" source="daily-page" />
             </div>
           </div>
         </section>

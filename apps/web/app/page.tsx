@@ -28,6 +28,7 @@ import {
 
 import { stories } from "@/components/digest-data"
 import { SiteNavbar } from "@/components/site-navbar"
+import { SubscribeForm } from "@/components/subscribe-form"
 
 const faqs = [
   {
@@ -190,19 +191,7 @@ export default function Page() {
                   for engineering decisions.
                 </p>
               </div>
-              <form className="flex w-full flex-col gap-3 sm:flex-row md:w-[28rem]">
-                <label className="sr-only" htmlFor="newsletter-email">
-                  Email address
-                </label>
-                <input
-                  id="newsletter-email"
-                  name="email"
-                  type="email"
-                  placeholder="you@company.com"
-                  className="h-10 min-w-0 flex-1 rounded-md border border-input bg-background px-3 py-2 text-sm shadow-xs transition-colors placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                />
-                <Button type="submit">Subscribe</Button>
-              </form>
+              <SubscribeForm id="newsletter-email" source="homepage-newsletter" />
             </div>
           </div>
         </section>

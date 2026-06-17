@@ -1,5 +1,11 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "ADMIN_SECRET",
+    "TURSO_AUTH_TOKEN",
+    "TURSO_DATABASE_URL",
+    "ZAPIER_WEBHOOK_URL"
+  ],
   "ui": "tui",
   "tasks": {
     "build": {
