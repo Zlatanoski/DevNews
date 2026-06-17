@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@workspace/ui/components/button"
 import {
   Card,
@@ -13,11 +14,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@workspace/ui/components/accordion"
-import { cn } from "@workspace/ui/lib/utils"
 import {
   ArrowRight,
-  Check,
-  CircleDollarSign,
   Code2,
   DatabaseZap,
   ExternalLink,
@@ -28,80 +26,8 @@ import {
   Zap,
 } from "lucide-react"
 
-const stories = [
-  {
-    headline: "U.S. export controls restrict Anthropic's latest frontier model",
-    summary:
-      "The White House restricted access to Anthropic's newest AI model using export controls, raising concerns that advanced U.S. models could become geopolitically gated. Axios reports this could make enterprises wary of long-term dependency on any single AI lab.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/ai-anthropic-export-controls",
-    why:
-      "API access, model availability, and enterprise procurement now carry regulatory risk; teams may need fallback providers or open-model strategies.",
-  },
-  {
-    headline:
-      "Microsoft moves Copilot Cowork to usage-based pricing and explores DeepSeek on Azure",
-    summary:
-      "Microsoft is shifting Copilot Cowork to compute-based pricing and considering a lower-cost DeepSeek V4 or open-source model option hosted on Azure. The move reflects rising costs from agentic tools that can call models repeatedly while completing tasks.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/microsoft-copilot-cowork-tokenmaxxing-cowork",
-    why:
-      "Agent pricing is becoming part of engineering budgeting; model routing, cost controls, and provider selection will matter more in dev workflows.",
-  },
-  {
-    headline: "Microsoft unveils Project Solara, an OS for AI-agent devices",
-    summary:
-      "At Build 2026, Microsoft announced Project Solara, an Android-based platform for \"agent-driven experiences\" on low-power devices. Reference concepts included a desk device and wearable badge that can invoke agents, transcribe conversations, and use camera context.",
-    source: "The Verge",
-    url: "https://www.theverge.com/news/941830/microsoft-project-solara-os-ai-agent-gadgets",
-    why:
-      "It signals a new platform surface for agent apps beyond web, desktop, and mobile, with enterprise security and device-management constraints baked in.",
-  },
-  {
-    headline:
-      "Nvidia's $20B bond sale shows AI infrastructure buildout is entering a debt-funded phase",
-    summary:
-      "Nvidia reportedly moved to sell $20 billion in corporate bonds as AI infrastructure spending accelerates. Axios cites Goldman estimates that hyperscalers may spend $770 billion on capex in 2026, roughly equal to operating cash flows.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/ai-nvidia-bonds-debt",
-    why:
-      "Compute availability, GPU pricing, inference costs, and cloud capacity are increasingly tied to capital-market dynamics, not just technical progress.",
-  },
-  {
-    headline:
-      "Google Gemini outage highlights reliability risk of AI platform dependencies",
-    summary:
-      "Gemini suffered widespread June 10 errors across web and mobile, including \"error 1076\" and \"error 1099,\" with Google later saying mitigations were applied while root-cause investigation continued. Reports affected users across multiple regions and account types.",
-    source: "TechRadar",
-    url: "https://www.techradar.com/news/live/gemini-down-june-2026",
-    why:
-      "Production apps built on AI services need retries, graceful degradation, provider fallbacks, and clear incident monitoring just like any other critical dependency.",
-  },
-]
-
-const plans = [
-  {
-    name: "Free",
-    price: "$0",
-    description: "A daily skim for individual developers.",
-    features: ["5 stories/day", "No archive"],
-  },
-  {
-    name: "Pro",
-    price: "$12",
-    cadence: "/mo",
-    description: "For engineers who track AI shifts continuously.",
-    features: ["Unlimited stories", "Full archive", "Email digest"],
-    highlighted: true,
-  },
-  {
-    name: "Team",
-    price: "$39",
-    cadence: "/mo",
-    description: "Shared context for product and platform teams.",
-    features: ["Everything in Pro", "10 seats", "Slack integration"],
-  },
-]
+import { stories } from "@/components/digest-data"
+import { SiteNavbar } from "@/components/site-navbar"
 
 const faqs = [
   {
@@ -139,6 +65,7 @@ const faqs = [
 export default function Page() {
   return (
     <div className="min-h-svh bg-background text-foreground">
+      <SiteNavbar />
       <main>
         <section className="border-b">
           <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-[1.05fr_0.95fr] md:items-center md:px-8 lg:py-20">
@@ -157,10 +84,10 @@ export default function Page() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Button size="lg" asChild>
-                  <a href="#pricing">
+                  <Link href="/pricing">
                     Start reading
                     <ArrowRight data-icon="inline-end" className="size-4" />
-                  </a>
+                  </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <a href="#top-stories">View top stories</a>
@@ -247,70 +174,6 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="pricing" className="border-b bg-muted/40 py-16 lg:py-20">
-          <div className="mx-auto max-w-7xl px-6 md:px-8">
-            <div className="mb-8 max-w-3xl">
-              <div className="mb-3 flex items-center gap-2 text-sm font-medium text-emerald-700 dark:text-emerald-400">
-                <CircleDollarSign className="size-4" />
-                Pricing
-              </div>
-              <h2 className="text-3xl font-semibold tracking-normal md:text-4xl">
-                Choose the briefing depth your team needs
-              </h2>
-            </div>
-            <div className="grid gap-4 lg:grid-cols-3">
-              {plans.map((plan) => (
-                <Card
-                  key={plan.name}
-                  className={cn(
-                    "relative flex min-h-full flex-col",
-                    plan.highlighted &&
-                      "border-emerald-700 shadow-md dark:border-emerald-500"
-                  )}
-                >
-                  {plan.highlighted ? (
-                    <div className="absolute right-4 top-4 rounded-full bg-emerald-700 px-2.5 py-1 text-xs font-medium text-white dark:bg-emerald-500 dark:text-emerald-950">
-                      Recommended
-                    </div>
-                  ) : null}
-                  <CardHeader>
-                    <CardTitle className="text-xl">{plan.name}</CardTitle>
-                    <CardDescription>{plan.description}</CardDescription>
-                    <div className="pt-5">
-                      <span className="text-4xl font-semibold">
-                        {plan.price}
-                      </span>
-                      {plan.cadence ? (
-                        <span className="text-muted-foreground">
-                          {plan.cadence}
-                        </span>
-                      ) : null}
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3">
-                      {plan.features.map((feature) => (
-                        <li
-                          key={feature}
-                          className="flex items-center gap-2 text-sm"
-                        >
-                          <Check className="size-4 text-emerald-700 dark:text-emerald-400" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                  <CardFooter className="mt-auto">
-                    <Button className="w-full">
-                      {plan.name === "Free" ? "Start Free Trial" : "Get Started"}
-                    </Button>
-                  </CardFooter>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <section className="border-b bg-card py-16 lg:py-20">
           <div className="mx-auto max-w-7xl px-6 md:px-8">
             <div className="grid gap-8 rounded-lg border bg-background p-6 shadow-xs md:grid-cols-[1fr_auto] md:items-center md:p-8">
@@ -380,9 +243,9 @@ export default function Page() {
             <a href="#" className="hover:text-foreground">
               Product
             </a>
-            <a href="#pricing" className="hover:text-foreground">
+            <Link href="/pricing" className="hover:text-foreground">
               Pricing
-            </a>
+            </Link>
             <a href="#" className="hover:text-foreground">
               Blog
             </a>
