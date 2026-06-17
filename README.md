@@ -1,12 +1,12 @@
-# Developer's Digest
+# DevNews
 
-Developer's Digest is an in-progress, agent-built developer news product. The goal is to turn fast-moving AI, cloud, infrastructure, and software-platform news into concise engineering signals: what changed, why it matters to developers, and what teams may need to watch next.
+DevNews is an in-progress, agent-built developer news product. The goal is to turn fast-moving AI, cloud, infrastructure, and software-platform news into concise engineering signals: what changed, why it matters to developers, and what teams may need to watch next.
 
 This repository is being shaped as a spec-driven, agentic coding project. We are using clear project instructions, scoped agents, and tight build/lint/smoke-test loops to keep momentum high while preserving implementation quality.
 
 ## What We Are Building
 
-Developer's Digest is planned as a focused briefing experience for software teams:
+DevNews is planned as a focused briefing experience for software teams:
 
 - A public frontend with curated developer news, daily briefings, pricing, and newsletter signup.
 - A backend API for subscriptions, unsubscribes, subscriber administration, and integration hooks.
@@ -21,7 +21,7 @@ This is still in progress. The current product surface is intentionally small: l
 This is a pnpm monorepo with two application packages:
 
 ```text
-developer-digest/
+Developer News/
 ├── frontend/   # Next.js App Router UI, port 3000
 ├── backend/    # Hono API, Drizzle ORM, Turso, port 4000
 ├── .codex/     # Agent configuration and role definitions
