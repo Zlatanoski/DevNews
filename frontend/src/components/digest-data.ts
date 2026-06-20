@@ -76,25 +76,48 @@ export const plans = [
 export const dailyArticles = [
   {
     date: "Jun 20, 2026",
-    headline: "Forget prompt engineering: 'Loop engineering' is all the rage now",
-    source: "Business Insider",
-    url: "https://www.businessinsider.com/what-are-loops-ai-engineering-tips-2026-6",
+    headline: "Social media declared Cursor dead. Then SpaceX handed the AI startup a $60 billion lifeline.",
+    source: "MarketWatch",
+    url: "https://www.marketwatch.com/story/social-media-declared-cursor-dead-then-spacex-handed-the-ai-startup-a-60-billion-lifeline-50454e29",
     snippets: [
-      "Agent loops over one-off prompts",
-      "Codex and Claude Code workflows",
-      "Cost and sub-agent tradeoffs",
+      "Cursor gets compute lifeline",
+      "SpaceX GPU infrastructure",
+      "AI coding market pressure",
     ],
   },
   {
     date: "Jun 20, 2026",
     headline:
-      "Social media declared Cursor dead. Then SpaceX handed the AI startup a $60 billion lifeline.",
-    source: "MarketWatch",
-    url: "https://www.marketwatch.com/story/social-media-declared-cursor-dead-then-spacex-handed-the-ai-startup-a-60-billion-lifeline-50454e29",
+      "Google DeepMind prepares to protect itself from AI agents going rogue",
+    source: "Times of India",
+    url: "https://timesofindia.indiatimes.com/technology/tech-news/google-deepmind-prepares-to-protect-itself-from-ai-agents-going-rogue-but-theres-a-problem/articleshow/131859318.cms",
     snippets: [
-      "Cursor compute bottleneck",
-      "SpaceX GPU infrastructure",
-      "AI coding tool consolidation",
+      "Agent safety roadmap",
+      "AI treated like insider risk",
+      "Monitoring autonomous systems",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline: "Good news, vibe coders: OpenAI says Codex is back to normal after experiencing elevated errors",
+    source: "Business Insider",
+    url: "https://www.businessinsider.com/openai-codex-elevated-errors-at-capacity-2026-6",
+    snippets: [
+      "Codex capacity incident",
+      "AI coding reliability",
+      "Status monitoring matters",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline:
+      "Microsoft forced to turn to AWS to boost GitHub cloud capacity following AI demand surge",
+    source: "TechRadar",
+    url: "https://www.techradar.com/pro/microsoft-forced-to-turn-to-aws-to-boost-github-cloud-capacity-following-ai-demand-surge",
+    snippets: [
+      "GitHub AI usage spike",
+      "Temporary AWS capacity",
+      "Multi-cloud developer platforms",
     ],
   },
   {
@@ -103,77 +126,9 @@ export const dailyArticles = [
     source: "Reuters",
     url: "https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/",
     snippets: [
-      "AlphaFold co-creator moves",
-      "AI talent competition",
-      "Anthropic science push",
-    ],
-  },
-  {
-    date: "Jun 20, 2026",
-    headline: "Google DeepMind prepares for rogue AI agents",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/18/google-deepmind-prepares-for-rogue-ai-agents",
-    snippets: [
-      "AI Control Roadmap",
-      "Agents treated like insider threats",
-      "Layered monitoring defenses",
-    ],
-  },
-  {
-    date: "Jun 20, 2026",
-    headline: "Why AI infrastructure planning must happen now",
-    source: "Times of India",
-    url: "https://timesofindia.indiatimes.com/technology/tech-news/why-ai-infrastructure-planning-must-happen-now/articleshow/131873003.cms",
-    snippets: [
-      "Always-on AI systems",
-      "Scale and security planning",
-      "Infrastructure as product risk",
-    ],
-  },
-  {
-    date: "Jun 20, 2026",
-    headline:
-      "Epic merges Unreal Engine 5 with Unreal Editor for Fortnite to build Unreal Engine 6",
-    source: "PC Gamer",
-    url: "https://www.pcgamer.com/software/it-is-going-to-change-a-lot-about-how-games-are-made-epic-merges-unreal-engine-5-with-unreal-engine-for-fortnite-to-give-game-devs-around-the-world-unreal-engine-6/",
-    snippets: [
-      "UE5 and UEFN merge",
-      "Verse scripting direction",
-      "Open standards for game devs",
-    ],
-  },
-  {
-    date: "Jun 20, 2026",
-    headline: "Accenture takes majority stake in cyber company Dragos",
-    source: "The Wall Street Journal",
-    url: "https://www.wsj.com/pro/cybersecurity/accenture-takes-majority-stake-in-cyber-company-dragos-bb536634",
-    snippets: [
-      "OT security consolidation",
-      "runZero and NetRise deals",
-      "AI-era infrastructure defense",
-    ],
-  },
-  {
-    date: "Jun 20, 2026",
-    headline:
-      "Microsoft turns to Amazon for help with GitHub's AI-driven capacity issues",
-    source: "Business Insider",
-    url: "https://www.businessinsider.com/microsoft-github-amazon-ai-cloud-capacity-2026-6",
-    snippets: [
-      "GitHub AI workload spike",
-      "Temporary multi-cloud capacity",
-      "Developer platform reliability",
-    ],
-  },
-  {
-    date: "Jun 20, 2026",
-    headline: "AI use in UK hits 'tipping point' as companies scale up, Google exec says",
-    source: "Reuters",
-    url: "https://www.reuters.com/world/uk/ai-use-uk-hits-tipping-point-companies-scale-up-google-exec-says-2026-06-17/",
-    snippets: [
-      "Enterprise AI moving to scale",
-      "Security and data governance",
-      "Cloud AI adoption pressure",
+      "AI research talent move",
+      "AlphaFold leader exits",
+      "Anthropic science expansion",
     ],
   },
   {
@@ -183,8 +138,53 @@ export const dailyArticles = [
     url: "https://www.reuters.com/business/media-telecom/softbank-launches-cybersecurity-product-based-openai-models-2026-06-16/",
     snippets: [
       "Patching as a Service",
-      "OpenAI-backed cyber defense",
-      "Critical infrastructure security",
+      "OpenAI cybersecurity product",
+      "Critical infrastructure defense",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline: "Why AI infrastructure planning must happen now",
+    source: "Times of India",
+    url: "https://timesofindia.indiatimes.com/technology/tech-news/why-ai-infrastructure-planning-must-happen-now/articleshow/131873003.cms",
+    snippets: [
+      "AI infrastructure planning",
+      "Security and scale needs",
+      "Always-on workloads",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline:
+      "Epic merges Unreal Engine 5 with Unreal Editor for Fortnite to build Unreal Engine 6",
+    source: "PC Gamer",
+    url: "https://www.pcgamer.com/software/it-is-going-to-change-a-lot-about-how-games-are-made-epic-merges-unreal-engine-5-with-unreal-engine-for-fortnite-to-give-game-devs-around-the-world-unreal-engine-6/",
+    snippets: [
+      "Unreal Engine 6 direction",
+      "UEFN and UE5 convergence",
+      "Verse for game development",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline: "Accenture takes majority stake in cyber company Dragos",
+    source: "The Wall Street Journal",
+    url: "https://www.wsj.com/pro/cybersecurity/accenture-takes-majority-stake-in-cyber-company-dragos-bb536634",
+    snippets: [
+      "OT security consolidation",
+      "Enterprise cyber services",
+      "Industrial infrastructure defense",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline: "AI use in UK hits tipping point as companies scale up, Google exec says",
+    source: "Reuters",
+    url: "https://www.reuters.com/world/uk/ai-use-uk-hits-tipping-point-companies-scale-up-google-exec-says-2026-06-17/",
+    snippets: [
+      "Enterprise AI adoption",
+      "Scaling beyond pilots",
+      "Cloud governance pressure",
     ],
   },
 ]
