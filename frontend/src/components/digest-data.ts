@@ -75,119 +75,116 @@ export const plans = [
 
 export const dailyArticles = [
   {
-    date: "Jun 17, 2026",
-    headline: "Who's in charge of Anthropic's AI models?",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/17/anthropic-fable-mythos-ai-model-government-oversight",
-    snippets: [
-      "Frontier model takedown",
-      "Fable/Mythos oversight",
-      "Audits and deployment controls",
-    ],
-  },
-  {
-    date: "Jun 17, 2026",
-    headline:
-      "AI takes center stage at the G7 amid tensions over American tech dominance",
-    source: "AP News",
-    url: "https://apnews.com/article/g7-france-ai-sovereignty-7d783c6de4356962e338b8b8563d48ea",
-    snippets: [
-      "AI sovereignty push",
-      "OpenAI/DeepMind/Anthropic at G7",
-      "Model-access geopolitics",
-    ],
-  },
-  {
-    date: "Jun 17, 2026",
-    headline:
-      "States forge ahead with AI regulations despite Trump's insistence he lead the way",
-    source: "AP News",
-    url: "https://apnews.com/article/trump-artificial-intelligence-chatbots-ai-23a0e44ab05402ddfe9cdfd0bffa0ade",
-    snippets: [
-      "State AI laws",
-      "Developer audit duties",
-      "Chatbot and decision-system rules",
-    ],
-  },
-  {
-    date: "Jun 17, 2026",
-    headline:
-      "Microsoft Was in Talks to Lease $3 Billion in Oracle Compute Capacity",
+    date: "Jun 20, 2026",
+    headline: "Forget prompt engineering: 'Loop engineering' is all the rage now",
     source: "Business Insider",
-    url: "https://www.businessinsider.com/microsoft-was-in-talks-to-lease-oracle-compute-capacity-2026-6",
+    url: "https://www.businessinsider.com/what-are-loops-ai-engineering-tips-2026-6",
     snippets: [
-      "AI compute crunch",
-      "FedRAMP blockers",
-      "Cloud capacity scramble",
+      "Agent loops over one-off prompts",
+      "Codex and Claude Code workflows",
+      "Cost and sub-agent tradeoffs",
     ],
   },
   {
-    date: "Jun 16, 2026",
-    headline: "Microsoft explores DeepSeek for Copilot Cowork",
+    date: "Jun 20, 2026",
+    headline:
+      "Social media declared Cursor dead. Then SpaceX handed the AI startup a $60 billion lifeline.",
+    source: "MarketWatch",
+    url: "https://www.marketwatch.com/story/social-media-declared-cursor-dead-then-spacex-handed-the-ai-startup-a-60-billion-lifeline-50454e29",
+    snippets: [
+      "Cursor compute bottleneck",
+      "SpaceX GPU infrastructure",
+      "AI coding tool consolidation",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline: "US scientist John Jumper to leave Google DeepMind for Anthropic",
+    source: "Reuters",
+    url: "https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/",
+    snippets: [
+      "AlphaFold co-creator moves",
+      "AI talent competition",
+      "Anthropic science push",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline: "Google DeepMind prepares for rogue AI agents",
     source: "Axios",
-    url: "https://www.axios.com/2026/06/16/microsoft-copilot-cowork-tokenmaxxing-cowork",
+    url: "https://www.axios.com/2026/06/18/google-deepmind-prepares-for-rogue-ai-agents",
     snippets: [
-      "Usage-based Copilot pricing",
-      "Optional Azure-hosted DeepSeek",
-      "Multi-model enterprise AI",
+      "AI Control Roadmap",
+      "Agents treated like insider threats",
+      "Layered monitoring defenses",
     ],
   },
   {
-    date: "Jun 16, 2026",
-    headline: "GitHub's AI Surge Pushes Microsoft Into Amazon's Arms",
+    date: "Jun 20, 2026",
+    headline: "Why AI infrastructure planning must happen now",
+    source: "Times of India",
+    url: "https://timesofindia.indiatimes.com/technology/tech-news/why-ai-infrastructure-planning-must-happen-now/articleshow/131873003.cms",
+    snippets: [
+      "Always-on AI systems",
+      "Scale and security planning",
+      "Infrastructure as product risk",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline:
+      "Epic merges Unreal Engine 5 with Unreal Editor for Fortnite to build Unreal Engine 6",
+    source: "PC Gamer",
+    url: "https://www.pcgamer.com/software/it-is-going-to-change-a-lot-about-how-games-are-made-epic-merges-unreal-engine-5-with-unreal-engine-for-fortnite-to-give-game-devs-around-the-world-unreal-engine-6/",
+    snippets: [
+      "UE5 and UEFN merge",
+      "Verse scripting direction",
+      "Open standards for game devs",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline: "Accenture takes majority stake in cyber company Dragos",
+    source: "The Wall Street Journal",
+    url: "https://www.wsj.com/pro/cybersecurity/accenture-takes-majority-stake-in-cyber-company-dragos-bb536634",
+    snippets: [
+      "OT security consolidation",
+      "runZero and NetRise deals",
+      "AI-era infrastructure defense",
+    ],
+  },
+  {
+    date: "Jun 20, 2026",
+    headline:
+      "Microsoft turns to Amazon for help with GitHub's AI-driven capacity issues",
     source: "Business Insider",
     url: "https://www.businessinsider.com/microsoft-github-amazon-ai-cloud-capacity-2026-6",
     snippets: [
-      "GitHub capacity strain",
-      "AWS support for Microsoft",
-      "AI coding workload spike",
+      "GitHub AI workload spike",
+      "Temporary multi-cloud capacity",
+      "Developer platform reliability",
     ],
   },
   {
-    date: "Jun 16, 2026",
-    headline:
-      "SpaceX overtakes Amazon to become world's fifth most valuable company",
-    source: "The Guardian",
-    url: "https://www.theguardian.com/science/2026/jun/16/spacex-ai-coding-anysphere-cursor-amazon-market-valuation-xai",
+    date: "Jun 20, 2026",
+    headline: "AI use in UK hits 'tipping point' as companies scale up, Google exec says",
+    source: "Reuters",
+    url: "https://www.reuters.com/world/uk/ai-use-uk-hits-tipping-point-companies-scale-up-google-exec-says-2026-06-17/",
     snippets: [
-      "Cursor acquisition",
-      "AI coding consolidation",
-      "xAI developer-tool ambitions",
+      "Enterprise AI moving to scale",
+      "Security and data governance",
+      "Cloud AI adoption pressure",
     ],
   },
   {
-    date: "Jun 14, 2026",
-    headline:
-      "Microsoft is reportedly testing Copilot+ AI features with discrete GPUs instead of NPUs",
-    source: "Tom's Hardware",
-    url: "https://www.tomshardware.com/software/windows/microsoft-is-reportedly-testing-copilot-ai-features-with-discrete-gpus-instead-of-npus-a-feature-available-on-windows-app-sdk-with-a-windows-insider-experimental-channel-build-and-developer-mode-turned-on",
+    date: "Jun 20, 2026",
+    headline: "SoftBank launches cybersecurity product based on OpenAI models",
+    source: "Reuters",
+    url: "https://www.reuters.com/business/media-telecom/softbank-launches-cybersecurity-product-based-openai-models-2026-06-16/",
     snippets: [
-      "Local AI APIs",
-      "Nvidia GPU support",
-      "Windows App SDK experiment",
-    ],
-  },
-  {
-    date: "Jun 12, 2026",
-    headline:
-      "OpenAI's latest acquisition could see big changes on the way for its Codex coding assistant",
-    source: "TechRadar",
-    url: "https://www.techradar.com/pro/openais-latest-acquisition-could-see-big-changes-on-the-way-for-its-codex-coding-assistant",
-    snippets: [
-      "Ona acquisition",
-      "Persistent agent environments",
-      "Codex long-running tasks",
-    ],
-  },
-  {
-    date: "Jun 4, 2026",
-    headline: "Windows is back on the Microsoft menu",
-    source: "The Verge",
-    url: "https://www.theverge.com/tech/943108/microsoft-build-2026-windows-love-notepad",
-    snippets: [
-      "Microsoft Build 2026",
-      "Hybrid local/cloud AI",
-      "Windows agent platform push",
+      "Patching as a Service",
+      "OpenAI-backed cyber defense",
+      "Critical infrastructure security",
     ],
   },
 ]
