@@ -1,51 +1,50 @@
 export const stories = [
   {
-    headline: "U.S. export controls restrict Anthropic's latest frontier model",
+    headline:
+      "Cursor gets a compute lifeline as SpaceX backs its AI coding push",
     summary:
-      "The White House restricted access to Anthropic's newest AI model using export controls, raising concerns that advanced U.S. models could become geopolitically gated. Axios reports this could make enterprises wary of long-term dependency on any single AI lab.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/ai-anthropic-export-controls",
+      "Cursor's parent company Anysphere reportedly gained a major SpaceX-backed lifeline after pressure from Claude Code, Codex, and other AI coding tools. The deal gives Cursor access to far more GPU infrastructure, which could help it train and serve stronger coding models.",
+    source: "MarketWatch",
+    url: "https://www.marketwatch.com/story/social-media-declared-cursor-dead-then-spacex-handed-the-ai-startup-a-60-billion-lifeline-50454e29",
     why:
-      "API access, model availability, and enterprise procurement now carry regulatory risk; teams may need fallback providers or open-model strategies.",
+      "AI coding tools are becoming infrastructure businesses, not just editor plugins; compute access may decide which developer tools survive.",
+  },
+  {
+    headline: "OpenAI Codex returns to normal after elevated errors",
+    summary:
+      "OpenAI's Codex experienced elevated errors before returning to normal service, according to reports. The incident matters because developers are increasingly relying on AI coding agents for production workflows, reviews, and code generation.",
+    source: "Business Insider",
+    url: "https://www.businessinsider.com/openai-codex-elevated-errors-at-capacity-2026-6",
+    why:
+      "AI coding agents now need the same reliability planning as cloud APIs: fallbacks, status checks, and graceful degradation when tooling is unavailable.",
+  },
+  {
+    headline: "Google DeepMind prepares defenses against rogue AI agents",
+    summary:
+      "Google DeepMind is focusing on safeguards for autonomous AI agents, including monitoring and control ideas for systems that can act independently. The work reflects growing concern that agentic systems need security models closer to insider-threat defense.",
+    source: "Times of India",
+    url: "https://timesofindia.indiatimes.com/technology/tech-news/google-deepmind-prepares-to-protect-itself-from-ai-agents-going-rogue-but-theres-a-problem/articleshow/131859318.cms",
+    why:
+      "Developers building agents need to think beyond prompts: permissions, audit logs, sandboxing, monitoring, and kill switches are becoming core architecture.",
   },
   {
     headline:
-      "Microsoft moves Copilot Cowork to usage-based pricing and explores DeepSeek on Azure",
+      "Microsoft turns to AWS capacity as GitHub AI demand strains infrastructure",
     summary:
-      "Microsoft is shifting Copilot Cowork to compute-based pricing and considering a lower-cost DeepSeek V4 or open-source model option hosted on Azure. The move reflects rising costs from agentic tools that can call models repeatedly while completing tasks.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/microsoft-copilot-cowork-tokenmaxxing-cowork",
-    why:
-      "Agent pricing is becoming part of engineering budgeting; model routing, cost controls, and provider selection will matter more in dev workflows.",
-  },
-  {
-    headline: "Microsoft unveils Project Solara, an OS for AI-agent devices",
-    summary:
-      'At Build 2026, Microsoft announced Project Solara, an Android-based platform for "agent-driven experiences" on low-power devices. Reference concepts included a desk device and wearable badge that can invoke agents, transcribe conversations, and use camera context.',
-    source: "The Verge",
-    url: "https://www.theverge.com/news/941830/microsoft-project-solara-os-ai-agent-gadgets",
-    why:
-      "It signals a new platform surface for agent apps beyond web, desktop, and mobile, with enterprise security and device-management constraints baked in.",
-  },
-  {
-    headline:
-      "Nvidia's $20B bond sale shows AI infrastructure buildout is entering a debt-funded phase",
-    summary:
-      "Nvidia reportedly moved to sell $20 billion in corporate bonds as AI infrastructure spending accelerates. Axios cites Goldman estimates that hyperscalers may spend $770 billion on capex in 2026, roughly equal to operating cash flows.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/ai-nvidia-bonds-debt",
-    why:
-      "Compute availability, GPU pricing, inference costs, and cloud capacity are increasingly tied to capital-market dynamics, not just technical progress.",
-  },
-  {
-    headline:
-      "Google Gemini outage highlights reliability risk of AI platform dependencies",
-    summary:
-      'Gemini suffered widespread June 10 errors across web and mobile, including "error 1076" and "error 1099," with Google later saying mitigations were applied while root-cause investigation continued. Reports affected users across multiple regions and account types.',
+      "Microsoft reportedly used Amazon Web Services capacity to support GitHub after AI-driven demand increased infrastructure pressure. The move shows how fast AI coding workloads can stress even large developer platforms.",
     source: "TechRadar",
-    url: "https://www.techradar.com/news/live/gemini-down-june-2026",
+    url: "https://www.techradar.com/pro/microsoft-forced-to-turn-to-aws-to-boost-github-cloud-capacity-following-ai-demand-surge",
     why:
-      "Production apps built on AI services need retries, graceful degradation, provider fallbacks, and clear incident monitoring just like any other critical dependency.",
+      "Developer platforms powered by AI can create sudden compute spikes; teams may need multi-cloud planning and capacity-aware architecture.",
+  },
+  {
+    headline: "AlphaFold scientist John Jumper leaves Google DeepMind for Anthropic",
+    summary:
+      "Reuters reports that John Jumper, known for his work on AlphaFold, is leaving Google DeepMind for Anthropic. The move highlights how intense AI talent competition remains across frontier labs.",
+    source: "Reuters",
+    url: "https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/",
+    why:
+      "Talent shifts between labs can influence model roadmaps, research priorities, and the tools developers will build on next.",
   },
 ]
 
