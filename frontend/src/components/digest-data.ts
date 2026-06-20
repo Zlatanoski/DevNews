@@ -1,51 +1,52 @@
 export const stories = [
   {
-    headline: "U.S. export controls restrict Anthropic's latest frontier model",
-    summary:
-      "The White House restricted access to Anthropic's newest AI model using export controls, raising concerns that advanced U.S. models could become geopolitically gated. Axios reports this could make enterprises wary of long-term dependency on any single AI lab.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/ai-anthropic-export-controls",
-    why:
-      "API access, model availability, and enterprise procurement now carry regulatory risk; teams may need fallback providers or open-model strategies.",
-  },
-  {
     headline:
-      "Microsoft moves Copilot Cowork to usage-based pricing and explores DeepSeek on Azure",
+      "Deutsche Bank says AI is cutting technology project timelines from years to months",
     summary:
-      "Microsoft is shifting Copilot Cowork to compute-based pricing and considering a lower-cost DeepSeek V4 or open-source model option hosted on Azure. The move reflects rising costs from agentic tools that can call models repeatedly while completing tasks.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/microsoft-copilot-cowork-tokenmaxxing-cowork",
+      "Deutsche Bank says AI is helping its technology teams clear internal backlogs faster and compress some project timelines from years into months. The bank is also watching AI usage costs closely as enterprise providers shift toward token-based pricing.",
+    source: "Reuters",
+    url: "https://www.reuters.com/business/finance/ai-cuts-tech-project-times-years-months-says-deutsche-bank-exec-2026-06-18/",
     why:
-      "Agent pricing is becoming part of engineering budgeting; model routing, cost controls, and provider selection will matter more in dev workflows.",
+      "This is a real enterprise signal for developers: AI coding and analysis tools are moving from experiments into production workflows, but cost control and model selection now matter.",
   },
   {
-    headline: "Microsoft unveils Project Solara, an OS for AI-agent devices",
+    headline: "Adobe brings AI assistants to Photoshop, Premiere, Illustrator, and InDesign",
     summary:
-      'At Build 2026, Microsoft announced Project Solara, an Android-based platform for "agent-driven experiences" on low-power devices. Reference concepts included a desk device and wearable badge that can invoke agents, transcribe conversations, and use camera context.',
+      "Adobe launched public beta AI assistants across major Creative Cloud apps, letting users automate app-specific work through natural language. Premiere can help organize timelines, while Photoshop and Illustrator assistants can handle multi-step editing and production tasks.",
     source: "The Verge",
-    url: "https://www.theverge.com/news/941830/microsoft-project-solara-os-ai-agent-gadgets",
+    url: "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch",
     why:
-      "It signals a new platform surface for agent apps beyond web, desktop, and mobile, with enterprise security and device-management constraints baked in.",
+      "Agent-style interfaces are becoming part of professional desktop software, which changes how developers design workflows, plugins, and creative tooling.",
   },
   {
     headline:
-      "Nvidia's $20B bond sale shows AI infrastructure buildout is entering a debt-funded phase",
+      "Epic outlines Unreal Engine 6 plan for Fortnite skins across other games",
     summary:
-      "Nvidia reportedly moved to sell $20 billion in corporate bonds as AI infrastructure spending accelerates. Axios cites Goldman estimates that hyperscalers may spend $770 billion on capex in 2026, roughly equal to operating cash flows.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/16/ai-nvidia-bonds-debt",
+      "Epic says Unreal Engine 6 will let developers build games that can use Fortnite skins, and create skins that work inside Fortnite. The plan is part of Epic's longer push toward interoperable game worlds and shared player assets.",
+    source: "The Verge",
+    url: "https://www.theverge.com/games/951785/epic-games-fortnite-unreal-fest-2026-unreal-engine-6-ai-metaverse",
     why:
-      "Compute availability, GPU pricing, inference costs, and cloud capacity are increasingly tied to capital-market dynamics, not just technical progress.",
+      "For game developers, this points toward cross-game identity, asset portability, and platform-dependent monetization models becoming more important technical decisions.",
   },
   {
     headline:
-      "Google Gemini outage highlights reliability risk of AI platform dependencies",
+      "UK companies move from AI experiments to production-scale deployment, Google Cloud says",
     summary:
-      'Gemini suffered widespread June 10 errors across web and mobile, including "error 1076" and "error 1099," with Google later saying mitigations were applied while root-cause investigation continued. Reports affected users across multiple regions and account types.',
-    source: "TechRadar",
-    url: "https://www.techradar.com/news/live/gemini-down-june-2026",
+      "A Google Cloud executive told Reuters that AI adoption in the UK has reached a tipping point, with companies and public-sector teams moving beyond tests into larger production use. Security, data governance, skills, and leadership buy-in remain major adoption constraints.",
+    source: "Reuters",
+    url: "https://www.reuters.com/world/uk/ai-use-uk-hits-tipping-point-companies-scale-up-google-exec-says-2026-06-17/",
     why:
-      "Production apps built on AI services need retries, graceful degradation, provider fallbacks, and clear incident monitoring just like any other critical dependency.",
+      "Developers working on AI features need to prepare for production concerns: governance, secure data flows, monitoring, and reliable integration with existing systems.",
+  },
+  {
+    headline:
+      "Microsoft Build 2026 pushes local AI development, agents, and AI-first devices",
+    summary:
+      "Microsoft used Build 2026 to highlight AI-focused developer hardware, agent tooling, and new AI-driven device concepts. The announcements included a Surface RTX Spark Dev Box for local AI development and broader work around AI agents and Windows developer workflows.",
+    source: "Reuters",
+    url: "https://www.reuters.com/world/china/microsoft-expected-showcase-new-pc-cloud-ai-tools-developer-conference-2026-06-02/",
+    why:
+      "Local AI hardware, agent runtimes, and AI-native operating-system ideas could affect how developers build, test, deploy, and secure AI-powered applications.",
   },
 ]
 
