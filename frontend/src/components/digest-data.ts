@@ -1,52 +1,53 @@
 export const stories = [
   {
     headline:
-      "Deutsche Bank says AI is cutting technology project timelines from years to months",
+      "Developers are shifting from prompt engineering to loop engineering",
     summary:
-      "Deutsche Bank says AI is helping its technology teams clear internal backlogs faster and compress some project timelines from years into months. The bank is also watching AI usage costs closely as enterprise providers shift toward token-based pricing.",
-    source: "Reuters",
-    url: "https://www.reuters.com/business/finance/ai-cuts-tech-project-times-years-months-says-deutsche-bank-exec-2026-06-18/",
+      "Business Insider reports that AI builders are increasingly designing recurring agent loops instead of writing one-off prompts. The pattern lets tools such as Claude Code and Codex continue toward a goal, coordinate sub-agents, and split work like coding and review, while raising new cost and token-budget concerns.",
+    source: "Business Insider",
+    url: "https://www.businessinsider.com/what-are-loops-ai-engineering-tips-2026-6",
     why:
-      "This is a real enterprise signal for developers: AI coding and analysis tools are moving from experiments into production workflows, but cost control and model selection now matter.",
-  },
-  {
-    headline: "Adobe brings AI assistants to Photoshop, Premiere, Illustrator, and InDesign",
-    summary:
-      "Adobe launched public beta AI assistants across major Creative Cloud apps, letting users automate app-specific work through natural language. Premiere can help organize timelines, while Photoshop and Illustrator assistants can handle multi-step editing and production tasks.",
-    source: "The Verge",
-    url: "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch",
-    why:
-      "Agent-style interfaces are becoming part of professional desktop software, which changes how developers design workflows, plugins, and creative tooling.",
+      "This is directly relevant to developers adopting agentic workflows: the next productivity jump may come from orchestrating reliable loops, not from writing better individual prompts.",
   },
   {
     headline:
-      "Epic outlines Unreal Engine 6 plan for Fortnite skins across other games",
+      "Google DeepMind publishes an AI Control Roadmap for agent security",
     summary:
-      "Epic says Unreal Engine 6 will let developers build games that can use Fortnite skins, and create skins that work inside Fortnite. The plan is part of Epic's longer push toward interoperable game worlds and shared player assets.",
-    source: "The Verge",
-    url: "https://www.theverge.com/games/951785/epic-games-fortnite-unreal-fest-2026-unreal-engine-6-ai-metaverse",
+      "Google DeepMind released a roadmap for securing internal systems against increasingly capable AI agents. The framework treats agents like potential insider threats and proposes layered defenses such as monitoring, access controls, response tiers, and analysis of coding-agent trajectories.",
+    source: "Google DeepMind",
+    url: "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
     why:
-      "For game developers, this points toward cross-game identity, asset portability, and platform-dependent monetization models becoming more important technical decisions.",
+      "As developers connect AI agents to code, files, terminals, and production tools, agent security is becoming a core engineering discipline rather than a research-only concern.",
   },
   {
     headline:
-      "UK companies move from AI experiments to production-scale deployment, Google Cloud says",
+      "Claude Design adds tighter handoff between design systems and Claude Code",
     summary:
-      "A Google Cloud executive told Reuters that AI adoption in the UK has reached a tipping point, with companies and public-sector teams moving beyond tests into larger production use. Security, data governance, skills, and leadership buy-in remain major adoption constraints.",
-    source: "Reuters",
-    url: "https://www.reuters.com/world/uk/ai-use-uk-hits-tipping-point-companies-scale-up-google-exec-says-2026-06-17/",
+      "Anthropic says Claude Design now imports design systems from GitHub repos and other sources, checks generated work against those components, and syncs with Claude Code. Developers can pull design systems into Claude Code with /design-sync or start design work from the terminal with /design.",
+    source: "Anthropic",
+    url: "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
     why:
-      "Developers working on AI features need to prepare for production concerns: governance, secure data flows, monitoring, and reliable integration with existing systems.",
+      "The update points to a faster design-to-code workflow where product teams can keep UI prototypes, brand systems, and implementation work closer together.",
   },
   {
     headline:
-      "Microsoft Build 2026 pushes local AI development, agents, and AI-first devices",
+      "France mobilises €13 billion for tech sovereignty and deeptech funding",
     summary:
-      "Microsoft used Build 2026 to highlight AI-focused developer hardware, agent tooling, and new AI-driven device concepts. The announcements included a Surface RTX Spark Dev Box for local AI development and broader work around AI agents and Windows developer workflows.",
+      "Reuters reports that France has mobilised €13 billion in new institutional investor funding under the third phase of its Tibi initiative. The programme aims to back French and European technology companies, with half of the new phase directed toward deeptech companies and a stronger focus on pan-European funds.",
     source: "Reuters",
-    url: "https://www.reuters.com/world/china/microsoft-expected-showcase-new-pc-cloud-ai-tools-developer-conference-2026-06-02/",
+    url: "https://www.reuters.com/business/media-telecom/france-mobilises-13-billion-tech-sovereignty-funding-push-2026-06-19/",
     why:
-      "Local AI hardware, agent runtimes, and AI-native operating-system ideas could affect how developers build, test, deploy, and secure AI-powered applications.",
+      "More European deeptech capital could affect where AI infrastructure, developer platforms, chips, and advanced software startups can scale over the next few years.",
+  },
+  {
+    headline:
+      "China tightens indium export checks as AI data center demand rises",
+    summary:
+      "Reuters reports that China is increasing scrutiny of indium exports, a metal used in indium phosphide for high-speed optical chips. Buyers are watching for tighter controls because those chips are important to next-generation AI data centers and cloud infrastructure.",
+    source: "Reuters",
+    url: "https://www.reuters.com/world/china/china-tightens-indium-export-checks-ai-demand-increases-2026-06-19/",
+    why:
+      "AI developer tools depend on huge cloud and data-center supply chains, so materials bottlenecks can eventually shape GPU availability, inference costs, and platform reliability.",
   },
 ]
 
