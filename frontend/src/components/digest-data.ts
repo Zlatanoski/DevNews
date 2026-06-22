@@ -1,53 +1,53 @@
 export const stories = [
   {
     headline:
-      "Developers are shifting from prompt engineering to loop engineering",
+      "Samsung rolls out ChatGPT Enterprise and Codex across key teams",
     summary:
-      "Business Insider reports that AI builders are increasingly designing recurring agent loops instead of writing one-off prompts. The pattern lets tools such as Claude Code and Codex continue toward a goal, coordinate sub-agents, and split work like coding and review, while raising new cost and token-budget concerns.",
-    source: "Business Insider",
-    url: "https://www.businessinsider.com/what-are-loops-ai-engineering-tips-2026-6",
+      "The Korea Times reports that Samsung Electronics will make ChatGPT Enterprise and OpenAI's Codex coding agent available to all employees in Korea and to Device eXperience division staff worldwide. The deployment covers software development, marketing, product design, manufacturing, knowledge work, and internal workflow creation.",
+    source: "The Korea Times",
+    url: "https://www.koreatimes.co.kr/business/tech-science/20260622/openai-lands-samsung-as-major-chatgpt-enterprise-customer",
     why:
-      "This is directly relevant to developers adopting agentic workflows: the next productivity jump may come from orchestrating reliable loops, not from writing better individual prompts.",
+      "This is a major enterprise signal for developers: coding agents are moving from individual tools into governed, company-wide platforms for engineering and internal software automation.",
   },
   {
     headline:
-      "Google DeepMind publishes an AI Control Roadmap for agent security",
+      "Indian developers prepare apps for Apple's new AI and Xcode tools",
     summary:
-      "Google DeepMind released a roadmap for securing internal systems against increasingly capable AI agents. The framework treats agents like potential insider threats and proposes layered defenses such as monitoring, access controls, response tiers, and analysis of coding-agent trajectories.",
-    source: "Google DeepMind",
-    url: "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+      "The Economic Times reports that Indian app teams are planning to adopt Apple's refreshed developer stack after WWDC, including AI-powered Siri, Xcode upgrades, Liquid Glass refinements, and trust-and-safety features. Developers cited automated code writing, app actions through Siri, private compute, and personalization as areas they expect to build into production apps.",
+    source: "The Economic Times",
+    url: "https://economictimes.indiatimes.com/tech/technology/indian-developers-set-to-incorporate-apples-latest-tools-in-their-app-offerings/articleshow/131896996.cms",
     why:
-      "As developers connect AI agents to code, files, terminals, and production tools, agent security is becoming a core engineering discipline rather than a research-only concern.",
+      "For iOS and macOS teams, the story highlights where Apple platform work is heading next: AI-assisted coding in Xcode, deeper Siri app integration, and privacy-conscious on-device/cloud AI patterns.",
   },
   {
     headline:
-      "Claude Design adds tighter handoff between design systems and Claude Code",
+      "ET AI Hackathon moves builders from ideas into working AI apps",
     summary:
-      "Anthropic says Claude Design now imports design systems from GitHub repos and other sources, checks generated work against those components, and syncs with Claude Code. Developers can pull design systems into Claude Code with /design-sync or start design work from the terminal with /design.",
-    source: "Anthropic",
-    url: "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
+      "The Economic Times says ET AI Hackathon 2.0 has entered its second phase, shifting shortlisted teams from concept review into implementation. Participants now have to turn AI proposals into functional products that solve real-world problems.",
+    source: "The Economic Times",
+    url: "https://m.economictimes.com/ai/ai-insights/et-ai-hackathon-2-0-enters-phase-2-challenging-builders-to-turn-ideas-into-ai-powered-solutions/articleshow/131903157.cms",
     why:
-      "The update points to a faster design-to-code workflow where product teams can keep UI prototypes, brand systems, and implementation work closer together.",
+      "It is a practical developer signal: AI news is moving from demos and pitches into buildable applications, evaluation, and shipping discipline.",
   },
   {
     headline:
-      "France mobilises €13 billion for tech sovereignty and deeptech funding",
+      "China expands export controls on rare earth and dual-use suppliers",
     summary:
-      "Reuters reports that France has mobilised €13 billion in new institutional investor funding under the third phase of its Tibi initiative. The programme aims to back French and European technology companies, with half of the new phase directed toward deeptech companies and a stronger focus on pan-European funds.",
+      "Reuters reports that China added MP Materials, USA Rare Earth, Aveox, and other U.S. entities to its export-control list, halting Chinese dual-use exports to those companies. The move also bars Chinese buyers from procuring products made by 46 U.S. companies under a separate finance ministry notice.",
     source: "Reuters",
-    url: "https://www.reuters.com/business/media-telecom/france-mobilises-13-billion-tech-sovereignty-funding-push-2026-06-19/",
+    url: "https://www.reuters.com/world/asia-pacific/china-targets-us-rare-earth-other-firms-with-export-controls-2026-06-22/",
     why:
-      "More European deeptech capital could affect where AI infrastructure, developer platforms, chips, and advanced software startups can scale over the next few years.",
+      "AI and cloud platforms depend on advanced hardware supply chains, so rare-earth and dual-use export controls can affect data-center buildouts, chip-adjacent suppliers, and long-term infrastructure costs.",
   },
   {
     headline:
-      "China tightens indium export checks as AI data center demand rises",
+      "Anthropic's AI-risk messaging draws scrutiny after export-ban fallout",
     summary:
-      "Reuters reports that China is increasing scrutiny of indium exports, a metal used in indium phosphide for high-speed optical chips. Buyers are watching for tighter controls because those chips are important to next-generation AI data centers and cloud infrastructure.",
-    source: "Reuters",
-    url: "https://www.reuters.com/world/china/china-tightens-indium-export-checks-ai-demand-increases-2026-06-19/",
+      "Financial Times analysis highlighted in today's tech coverage says Anthropic's 2026 official statements and posts used AI-risk language far more often than OpenAI's, raising questions about whether safety messaging shaped the company's export-control treatment. The debate comes as model access becomes a policy issue, not just a product choice.",
+    source: "Financial Times",
+    url: "https://www.ft.com/content/16ace46c-aeac-40c9-8598-3c01fa4481cb",
     why:
-      "AI developer tools depend on huge cloud and data-center supply chains, so materials bottlenecks can eventually shape GPU availability, inference costs, and platform reliability.",
+      "Developers building on hosted frontier models need to watch regulatory and vendor-distribution risk, because access to models can change for policy reasons outside normal API or product roadmaps.",
   },
 ]
 
