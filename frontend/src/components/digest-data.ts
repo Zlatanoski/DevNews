@@ -1,53 +1,53 @@
 export const stories = [
   {
     headline:
-      "Samsung rolls out ChatGPT Enterprise and Codex across key teams",
+      "OpenAI expands Daybreak with Codex Security and Patch the Planet",
     summary:
-      "The Korea Times reports that Samsung Electronics will make ChatGPT Enterprise and OpenAI's Codex coding agent available to all employees in Korea and to Device eXperience division staff worldwide. The deployment covers software development, marketing, product design, manufacturing, knowledge work, and internal workflow creation.",
-    source: "The Korea Times",
-    url: "https://www.koreatimes.co.kr/business/tech-science/20260622/openai-lands-samsung-as-major-chatgpt-enterprise-customer",
+      "OpenAI announced a broader Daybreak cybersecurity push, including an updated Codex Security plugin, the full limited release of GPT-5.5-Cyber for trusted defenders, a Daybreak Cyber Partner Program, and Patch the Planet support for open-source maintainers. The company says initial Patch the Planet participants include cURL, Go, Python, Sigstore, and pyca/cryptography.",
+    source: "OpenAI",
+    url: "https://openai.com/index/daybreak-securing-the-world/",
     why:
-      "This is a major enterprise signal for developers: coding agents are moving from individual tools into governed, company-wide platforms for engineering and internal software automation.",
+      "This matters to developers because AI security is moving closer to everyday code review, patch generation, vulnerability triage, and open-source maintenance workflows.",
   },
   {
     headline:
-      "Indian developers prepare apps for Apple's new AI and Xcode tools",
+      "IBM joins OpenAI's Daybreak program for enterprise security AI",
     summary:
-      "The Economic Times reports that Indian app teams are planning to adopt Apple's refreshed developer stack after WWDC, including AI-powered Siri, Xcode upgrades, Liquid Glass refinements, and trust-and-safety features. Developers cited automated code writing, app actions through Siri, private compute, and personalization as areas they expect to build into production apps.",
-    source: "The Economic Times",
-    url: "https://economictimes.indiatimes.com/tech/technology/indian-developers-set-to-incorporate-apples-latest-tools-in-their-app-offerings/articleshow/131896996.cms",
-    why:
-      "For iOS and macOS teams, the story highlights where Apple platform work is heading next: AI-assisted coding in Xcode, deeper Siri app integration, and privacy-conscious on-device/cloud AI patterns.",
-  },
-  {
-    headline:
-      "ET AI Hackathon moves builders from ideas into working AI apps",
-    summary:
-      "The Economic Times says ET AI Hackathon 2.0 has entered its second phase, shifting shortlisted teams from concept review into implementation. Participants now have to turn AI proposals into functional products that solve real-world problems.",
-    source: "The Economic Times",
-    url: "https://m.economictimes.com/ai/ai-insights/et-ai-hackathon-2-0-enters-phase-2-challenging-builders-to-turn-ideas-into-ai-powered-solutions/articleshow/131903157.cms",
-    why:
-      "It is a practical developer signal: AI news is moving from demos and pitches into buildable applications, evaluation, and shipping discipline.",
-  },
-  {
-    headline:
-      "China expands export controls on rare earth and dual-use suppliers",
-    summary:
-      "Reuters reports that China added MP Materials, USA Rare Earth, Aveox, and other U.S. entities to its export-control list, halting Chinese dual-use exports to those companies. The move also bars Chinese buyers from procuring products made by 46 U.S. companies under a separate finance ministry notice.",
+      "Reuters reports that IBM partnered with OpenAI to bring frontier AI capabilities into enterprise security workflows. IBM joined the OpenAI Daybreak Cyber Partner Program and launched an application-security service that uses OpenAI's cyber capabilities to identify and validate software vulnerabilities faster.",
     source: "Reuters",
-    url: "https://www.reuters.com/world/asia-pacific/china-targets-us-rare-earth-other-firms-with-export-controls-2026-06-22/",
+    url: "https://www.reuters.com/technology/ibm-partners-with-openai-enterprise-security-ai-2026-06-22/",
     why:
-      "AI and cloud platforms depend on advanced hardware supply chains, so rare-earth and dual-use export controls can affect data-center buildouts, chip-adjacent suppliers, and long-term infrastructure costs.",
+      "Enterprise developers should watch this because AI-assisted vulnerability validation and remediation are becoming managed services inside large security and software-delivery stacks.",
   },
   {
     headline:
-      "Anthropic's AI-risk messaging draws scrutiny after export-ban fallout",
+      "Five Eyes agencies warn AI cyber capabilities may shift within months",
     summary:
-      "Financial Times analysis highlighted in today's tech coverage says Anthropic's 2026 official statements and posts used AI-risk language far more often than OpenAI's, raising questions about whether safety messaging shaped the company's export-control treatment. The debate comes as model access becomes a policy issue, not just a product choice.",
-    source: "Financial Times",
-    url: "https://www.ft.com/content/16ace46c-aeac-40c9-8598-3c01fa4481cb",
+      "The Guardian reports that the Five Eyes intelligence alliance warned frontier AI models could transform cyber offense and defense on a timeline of months, not years. The warning calls for governments and businesses to treat AI-enabled cybersecurity as an urgent resilience issue.",
+    source: "The Guardian",
+    url: "https://www.theguardian.com/technology/2026/jun/22/anthropic-claude-fable-ai-model-artificial-intelligence-national-security",
     why:
-      "Developers building on hosted frontier models need to watch regulatory and vendor-distribution risk, because access to models can change for policy reasons outside normal API or product roadmaps.",
+      "For software teams, the warning raises the priority of secure-by-design practices, fast patching, threat modeling, and AI-assisted defensive tooling.",
+  },
+  {
+    headline:
+      "Vibe-coded apps face a security reality check",
+    summary:
+      "The Verge warns that AI-built personal apps can become risky when they move from local prototypes into shared or cloud-hosted software. Security experts highlighted missing authentication, exposed databases, weak threat models, and the need to run security reviews intentionally rather than assuming coding agents will do it automatically.",
+    source: "The Verge",
+    url: "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
+    why:
+      "As more non-specialists and internal teams ship AI-generated tools, developers need practical guardrails for authentication, data handling, cloud deployment, and review workflows.",
+  },
+  {
+    headline:
+      "Open-source AI adoption forces a cost-versus-security tradeoff",
+    summary:
+      "Axios reports that companies are weighing cheaper open-source AI models against security and geopolitical risk, especially as Chinese models gain enterprise attention. The discussion includes concerns around data controls, model provenance, and how platform vendors may host or wrap open models for business use.",
+    source: "Axios",
+    url: "https://www.axios.com/2026/06/22/open-source-ai-china-cost-risk-glm-deepseek",
+    why:
+      "Developers choosing models for products or internal tools need to evaluate not only benchmark performance and price, but also data exposure, compliance, supply-chain trust, and future access risk.",
   },
 ]
 
