@@ -1,53 +1,53 @@
 export const stories = [
   {
     headline:
-      "OpenAI expands Daybreak with Codex Security and Patch the Planet",
+      "Anthropic's Claude Tag brings a Slack-native AI agent to workspaces",
     summary:
-      "OpenAI announced a broader Daybreak cybersecurity push, including an updated Codex Security plugin, the full limited release of GPT-5.5-Cyber for trusted defenders, a Daybreak Cyber Partner Program, and Patch the Planet support for open-source maintainers. The company says initial Patch the Planet participants include cURL, Go, Python, Sigstore, and pyca/cryptography.",
-    source: "OpenAI",
-    url: "https://openai.com/index/daybreak-securing-the-world/",
+      "The Economic Times reports that Anthropic launched Claude Tag, a Slack-native AI agent that replaces the earlier Claude chatbot inside Salesforce's collaboration platform. The tool is designed to provide context-aware assistance directly in channels and help teams handle workplace workflows without leaving Slack.",
+    source: "The Economic Times",
+    url: "https://m.economictimes.com/tech/artificial-intelligence/anthropic-launches-claude-tag-everything-you-need-to-know-about-the-slack-native-ai-agent/articleshow/131958086.cms",
     why:
-      "This matters to developers because AI security is moving closer to everyday code review, patch generation, vulnerability triage, and open-source maintenance workflows.",
+      "Developers should watch this because AI agents are moving from standalone chat surfaces into collaboration systems where engineering decisions, incidents, planning, and handoffs already happen.",
   },
   {
     headline:
-      "IBM joins OpenAI's Daybreak program for enterprise security AI",
+      "Zeller says targeted AI adoption cut its product cycle to four weeks",
     summary:
-      "Reuters reports that IBM partnered with OpenAI to bring frontier AI capabilities into enterprise security workflows. IBM joined the OpenAI Daybreak Cyber Partner Program and launched an application-security service that uses OpenAI's cyber capabilities to identify and validate software vulnerabilities faster.",
-    source: "Reuters",
-    url: "https://www.reuters.com/technology/ibm-partners-with-openai-enterprise-security-ai-2026-06-22/",
+      "The Australian reports that fintech company Zeller shortened its product development cycle by using AI without imposing a broad company-wide mandate. CEO Ben Pfisterer said Claude is used for development, Gemini for business work, and ChatGPT for strategy, while AI has helped increase feature delivery by up to 70%.",
+    source: "The Australian",
+    url: "https://www.theaustralian.com.au/business/technology/zeller-ceo-reveals-how-rejecting-ai-mandates-cut-product-cycle-to-four-weeks/news-story/8b3d0bba7e94d15e1b4cade06553e6ea",
     why:
-      "Enterprise developers should watch this because AI-assisted vulnerability validation and remediation are becoming managed services inside large security and software-delivery stacks.",
+      "The story gives software teams a concrete operating lesson: AI rollout strategy, guardrails, and review workflows can matter more than simply forcing every engineer to use the same tools.",
   },
   {
     headline:
-      "Five Eyes agencies warn AI cyber capabilities may shift within months",
+      "Anthropic's Mythos finds flaws in classified government systems test",
     summary:
-      "The Guardian reports that the Five Eyes intelligence alliance warned frontier AI models could transform cyber offense and defense on a timeline of months, not years. The warning calls for governments and businesses to treat AI-enabled cybersecurity as an urgent resilience issue.",
-    source: "The Guardian",
-    url: "https://www.theguardian.com/technology/2026/jun/22/anthropic-claude-fable-ai-model-artificial-intelligence-national-security",
+      "AP reports that Anthropic's Mythos model found vulnerabilities in classified U.S. government systems during a security test with intelligence agencies. The model identified weaknesses within hours without exploiting them, intensifying debate over advanced AI tools for cyber defense and access controls.",
+    source: "AP",
+    url: "https://apnews.com/article/3e8762c0527c4d8ed657cbe48c84a718",
     why:
-      "For software teams, the warning raises the priority of secure-by-design practices, fast patching, threat modeling, and AI-assisted defensive tooling.",
+      "AI-assisted vulnerability discovery is moving quickly from demos into sensitive production-like environments, which raises the stakes for secure coding, patch prioritization, model access, and defensive automation.",
   },
   {
     headline:
-      "Vibe-coded apps face a security reality check",
+      "Super Micro-backed Argentum lands $7.8B in AI infrastructure deals",
     summary:
-      "The Verge warns that AI-built personal apps can become risky when they move from local prototypes into shared or cloud-hosted software. Security experts highlighted missing authentication, exposed databases, weak threat models, and the need to run security reviews intentionally rather than assuming coding agents will do it automatically.",
-    source: "The Verge",
-    url: "https://www.theverge.com/ai-artificial-intelligence/950844/vibe-coding-security-risks-apps",
+      "Barron's reports that Argentum AI secured $7.8 billion in cloud-computing agreements tied to Nvidia GB300 deployments in Poland. The plan includes 47,000 Nvidia chips at a 300-megawatt data center, adding to Europe's race to build large-scale AI compute capacity.",
+    source: "Barron's",
+    url: "https://www.barrons.com/articles/super-micro-ai-argentum-nvidia-chips-895c7460",
     why:
-      "As more non-specialists and internal teams ship AI-generated tools, developers need practical guardrails for authentication, data handling, cloud deployment, and review workflows.",
+      "Developers building AI products depend on GPU supply, regional cloud capacity, and inference pricing, so new infrastructure deals can affect where teams deploy and how much advanced AI workloads cost.",
   },
   {
     headline:
-      "Open-source AI adoption forces a cost-versus-security tradeoff",
+      "Oracle workforce cuts highlight the cost of its AI and cloud pivot",
     summary:
-      "Axios reports that companies are weighing cheaper open-source AI models against security and geopolitical risk, especially as Chinese models gain enterprise attention. The discussion includes concerns around data controls, model provenance, and how platform vendors may host or wrap open models for business use.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/22/open-source-ai-china-cost-risk-glm-deepseek",
+      "The San Francisco Chronicle reports that Oracle's headcount fell by about 21,000 over the past year as the company expanded AI and cloud infrastructure spending. Oracle disclosed higher restructuring costs and a sharp rise in capital expenditures, largely driven by data-center expansion for AI services.",
+    source: "San Francisco Chronicle",
+    url: "https://www.sfchronicle.com/tech/article/oracle-ai-workforce-cuts-22317134.php",
     why:
-      "Developers choosing models for products or internal tools need to evaluate not only benchmark performance and price, but also data exposure, compliance, supply-chain trust, and future access risk.",
+      "Oracle's shift matters to developers because enterprise software vendors are reallocating money and teams toward AI infrastructure, changing platform roadmaps, cloud capacity, pricing pressure, and support priorities.",
   },
 ]
 
