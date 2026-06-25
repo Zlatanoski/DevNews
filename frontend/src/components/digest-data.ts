@@ -1,53 +1,51 @@
 export const stories = [
   {
     headline:
-      "Anthropic's Claude Tag brings a Slack-native AI agent to workspaces",
+      "Qualcomm buys Modular to challenge CUDA-style AI software stacks",
     summary:
-      "The Economic Times reports that Anthropic launched Claude Tag, a Slack-native AI agent that replaces the earlier Claude chatbot inside Salesforce's collaboration platform. The tool is designed to provide context-aware assistance directly in channels and help teams handle workplace workflows without leaving Slack.",
-    source: "The Economic Times",
-    url: "https://m.economictimes.com/tech/artificial-intelligence/anthropic-launches-claude-tag-everything-you-need-to-know-about-the-slack-native-ai-agent/articleshow/131958086.cms",
+      "Reuters reports that Qualcomm agreed to buy AI software startup Modular in an all-stock deal valued at about $4 billion. Modular's platform helps AI models run across different chips without developers rewriting code for each hardware target, giving Qualcomm a stronger software layer for AI data-center and device workloads.",
+    source: "Reuters",
+    url: "https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/",
     why:
-      "Developers should watch this because AI agents are moving from standalone chat surfaces into collaboration systems where engineering decisions, incidents, planning, and handoffs already happen.",
+      "This matters to developers because AI portability, compiler stacks, and hardware-agnostic runtimes are becoming strategic alternatives to Nvidia's CUDA ecosystem.",
+  },
+  {
+    headline: "GitHub's AI coding surge gives it its best month ever",
+    summary:
+      "Business Insider reports that GitHub had its best month ever as demand for AI-assisted coding jumped after Copilot's June 1 move to usage-based billing. The boom puts GitHub directly against Cursor, OpenAI Codex, and Claude Code, while also exposing capacity and reliability pressure from agentic coding workloads.",
+    source: "Business Insider",
+    url: "https://www.businessinsider.com/github-best-month-ever-internal-meeting-2026-6",
+    why:
+      "For software teams, GitHub's growth shows that AI coding agents are no longer experimental side tools; they are becoming core developer infrastructure with pricing and uptime tradeoffs.",
   },
   {
     headline:
-      "Zeller says targeted AI adoption cut its product cycle to four weeks",
+      "Anthropic accuses Alibaba-linked operators of large-scale Claude distillation",
     summary:
-      "The Australian reports that fintech company Zeller shortened its product development cycle by using AI without imposing a broad company-wide mandate. CEO Ben Pfisterer said Claude is used for development, Gemini for business work, and ChatGPT for strategy, while AI has helped increase feature delivery by up to 70%.",
-    source: "The Australian",
-    url: "https://www.theaustralian.com.au/business/technology/zeller-ceo-reveals-how-rejecting-ai-mandates-cut-product-cycle-to-four-weeks/news-story/8b3d0bba7e94d15e1b4cade06553e6ea",
+      "Reuters reports that Anthropic accused operators linked to Alibaba and Qwen of using nearly 25,000 fake accounts and tens of millions of interactions to extract Claude model capabilities. Anthropic framed the activity as a major model-distillation attack that could accelerate rival AI systems without paying the full research cost.",
+    source: "Reuters",
+    url: "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
     why:
-      "The story gives software teams a concrete operating lesson: AI rollout strategy, guardrails, and review workflows can matter more than simply forcing every engineer to use the same tools.",
+      "Developers building on AI APIs should track this because model-abuse controls, rate limits, account verification, and usage monitoring are becoming part of platform security design.",
   },
   {
     headline:
-      "Anthropic's Mythos finds flaws in classified government systems test",
+      "China's 360 says its AI cyber tools can rival Anthropic's Mythos",
     summary:
-      "AP reports that Anthropic's Mythos model found vulnerabilities in classified U.S. government systems during a security test with intelligence agencies. The model identified weaknesses within hours without exploiting them, intensifying debate over advanced AI tools for cyber defense and access controls.",
-    source: "AP",
-    url: "https://apnews.com/article/3e8762c0527c4d8ed657cbe48c84a718",
+      "Reuters reports that Chinese cybersecurity company 360 Security Technology unveiled AI security tools designed to match Anthropic's Mythos vulnerability-detection system. The tools, named Tulongfeng and Yitianzhen, are aimed at automated vulnerability discovery, cyber defense, and incident response.",
+    source: "Reuters",
+    url: "https://www.reuters.com/legal/litigation/chinas-360-says-it-has-developed-tools-match-anthropics-mythos-2026-06-24/",
     why:
-      "AI-assisted vulnerability discovery is moving quickly from demos into sensitive production-like environments, which raises the stakes for secure coding, patch prioritization, model access, and defensive automation.",
+      "AI-assisted vulnerability discovery is becoming a geopolitical and engineering issue, changing how security teams triage bugs, validate findings, and protect critical systems.",
   },
   {
-    headline:
-      "Super Micro-backed Argentum lands $7.8B in AI infrastructure deals",
+    headline: "Google delays Gemini 3.5 Pro while tuning agent performance",
     summary:
-      "Barron's reports that Argentum AI secured $7.8 billion in cloud-computing agreements tied to Nvidia GB300 deployments in Poland. The plan includes 47,000 Nvidia chips at a 300-megawatt data center, adding to Europe's race to build large-scale AI compute capacity.",
-    source: "Barron's",
-    url: "https://www.barrons.com/articles/super-micro-ai-argentum-nvidia-chips-895c7460",
+      "Business Insider reports that Google pushed the Gemini 3.5 Pro launch from June into July while it gathers feedback from early testers. The model is expected to improve long-horizon tasks and AI-agent behavior, including feedback from Antigravity users and benchmarking environments.",
+    source: "Business Insider",
+    url: "https://www.businessinsider.com/google-3-5-pro-july-release-tokens-ai-agents-model-2026-6",
     why:
-      "Developers building AI products depend on GPU supply, regional cloud capacity, and inference pricing, so new infrastructure deals can affect where teams deploy and how much advanced AI workloads cost.",
-  },
-  {
-    headline:
-      "Oracle workforce cuts highlight the cost of its AI and cloud pivot",
-    summary:
-      "The San Francisco Chronicle reports that Oracle's headcount fell by about 21,000 over the past year as the company expanded AI and cloud infrastructure spending. Oracle disclosed higher restructuring costs and a sharp rise in capital expenditures, largely driven by data-center expansion for AI services.",
-    source: "San Francisco Chronicle",
-    url: "https://www.sfchronicle.com/tech/article/oracle-ai-workforce-cuts-22317134.php",
-    why:
-      "Oracle's shift matters to developers because enterprise software vendors are reallocating money and teams toward AI infrastructure, changing platform roadmaps, cloud capacity, pricing pressure, and support priorities.",
+      "Model launch timing affects developers planning products around Gemini, especially teams depending on stronger long-context, coding, and agent workflows.",
   },
 ]
 
