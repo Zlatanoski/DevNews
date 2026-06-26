@@ -1,51 +1,52 @@
 export const stories = [
   {
     headline:
-      "Qualcomm buys Modular to challenge CUDA-style AI software stacks",
+      "EU moves to put AWS and Azure under Digital Markets Act rules",
     summary:
-      "Reuters reports that Qualcomm agreed to buy AI software startup Modular in an all-stock deal valued at about $4 billion. Modular's platform helps AI models run across different chips without developers rewriting code for each hardware target, giving Qualcomm a stronger software layer for AI data-center and device workloads.",
+      "Reuters reports that EU antitrust regulators preliminarily concluded that Amazon Web Services and Microsoft Azure should be designated as gatekeepers under the Digital Markets Act. The move would bring stricter obligations around interoperability, data portability, and self-preferencing for two cloud platforms that underpin much of Europe's AI and software infrastructure.",
     source: "Reuters",
-    url: "https://www.reuters.com/business/qualcomm-buy-ai-startup-modular-2026-06-24/",
+    url: "https://www.reuters.com/business/retail-consumer/amazon-microsoft-cloud-computing-services-should-fall-under-eu-tech-rules-eu-2026-06-25/",
     why:
-      "This matters to developers because AI portability, compiler stacks, and hardware-agnostic runtimes are becoming strategic alternatives to Nvidia's CUDA ecosystem.",
-  },
-  {
-    headline: "GitHub's AI coding surge gives it its best month ever",
-    summary:
-      "Business Insider reports that GitHub had its best month ever as demand for AI-assisted coding jumped after Copilot's June 1 move to usage-based billing. The boom puts GitHub directly against Cursor, OpenAI Codex, and Claude Code, while also exposing capacity and reliability pressure from agentic coding workloads.",
-    source: "Business Insider",
-    url: "https://www.businessinsider.com/github-best-month-ever-internal-meeting-2026-6",
-    why:
-      "For software teams, GitHub's growth shows that AI coding agents are no longer experimental side tools; they are becoming core developer infrastructure with pricing and uptime tradeoffs.",
+      "Cloud rules shape how developers deploy, migrate, and integrate AI systems. If AWS and Azure face stronger portability requirements, European teams could gain more leverage over lock-in and platform architecture choices.",
   },
   {
     headline:
-      "Anthropic accuses Alibaba-linked operators of large-scale Claude distillation",
+      "Amazon adds $13 billion for AI and cloud infrastructure in India",
     summary:
-      "Reuters reports that Anthropic accused operators linked to Alibaba and Qwen of using nearly 25,000 fake accounts and tens of millions of interactions to extract Claude model capabilities. Anthropic framed the activity as a major model-distillation attack that could accelerate rival AI systems without paying the full research cost.",
+      "Reuters reports that Amazon will invest an additional $13 billion in India by 2030 to expand AI and cloud infrastructure, focused on the Mumbai and Hyderabad regions. The new pledge brings Amazon's planned India investment to $48 billion through 2030 and follows CEO Andy Jassy's meeting with Prime Minister Narendra Modi.",
     source: "Reuters",
-    url: "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+    url: "https://www.reuters.com/world/india/amazon-invest-additional-13-billion-india-2026-06-25/",
     why:
-      "Developers building on AI APIs should track this because model-abuse controls, rate limits, account verification, and usage monitoring are becoming part of platform security design.",
+      "More hyperscale capacity in India matters for developers building regional AI products, latency-sensitive cloud apps, and enterprise services that need local infrastructure and data residency options.",
   },
   {
     headline:
-      "China's 360 says its AI cyber tools can rival Anthropic's Mythos",
+      "US bill would force AI developers to report critical incidents",
     summary:
-      "Reuters reports that Chinese cybersecurity company 360 Security Technology unveiled AI security tools designed to match Anthropic's Mythos vulnerability-detection system. The tools, named Tulongfeng and Yitianzhen, are aimed at automated vulnerability discovery, cyber defense, and incident response.",
+      "Reuters reports that U.S. Representative Nathaniel Moran introduced the AI Incident Reporting Act, which would require AI model developers to report critical incidents to the Commerce Department within seven days. The bill targets events such as security breaches, systems bypassing human oversight, and public-safety threats.",
     source: "Reuters",
-    url: "https://www.reuters.com/legal/litigation/chinas-360-says-it-has-developed-tools-match-anthropics-mythos-2026-06-24/",
+    url: "https://www.reuters.com/legal/litigation/us-lawmaker-proposes-bill-require-ai-companies-report-critical-incidents-2026-06-25/",
     why:
-      "AI-assisted vulnerability discovery is becoming a geopolitical and engineering issue, changing how security teams triage bugs, validate findings, and protect critical systems.",
+      "Incident reporting could become part of the compliance baseline for frontier AI platforms, affecting logging, monitoring, risk assessment, and release processes for teams shipping AI products.",
   },
   {
-    headline: "Google delays Gemini 3.5 Pro while tuning agent performance",
+    headline:
+      "New Codex research shows AI agents moving beyond simple chat",
     summary:
-      "Business Insider reports that Google pushed the Gemini 3.5 Pro launch from June into July while it gathers feedback from early testers. The model is expected to improve long-horizon tasks and AI-agent behavior, including feedback from Antigravity users and benchmarking environments.",
-    source: "Business Insider",
-    url: "https://www.businessinsider.com/google-3-5-pro-july-release-tokens-ai-agents-model-2026-6",
+      "Axios reports on new research from OpenAI, Columbia, Duke, and the University of Pennsylvania showing that agent use is becoming more substantial, with Codex users delegating longer tasks. The report says software development remains the primary use case while some non-developers are also starting to use agents for complex work.",
+    source: "Axios",
+    url: "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
     why:
-      "Model launch timing affects developers planning products around Gemini, especially teams depending on stronger long-context, coding, and agent workflows.",
+      "For developers, this is another signal that agent workflows are shifting from demos to real task delegation, raising the importance of repo context, review discipline, and safe automation boundaries.",
+  },
+  {
+    headline: "Anthropic hires Orange's AI chief as it expands in Europe",
+    summary:
+      "Reuters reports that Anthropic hired the head of artificial intelligence from French telecom group Orange as part of its European expansion. The move adds senior telecom and enterprise AI experience to Anthropic while major model providers compete for regional talent, customers, and policy credibility.",
+    source: "Reuters",
+    url: "https://www.reuters.com/business/media-telecom/anthropic-hires-oranges-ai-chief-amid-europe-push-2026-06-25/",
+    why:
+      "Anthropic's Europe push matters to developers because regional AI leadership can affect model availability, enterprise partnerships, compliance posture, and local support for Claude-based products.",
   },
 ]
 
