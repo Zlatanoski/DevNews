@@ -21,3 +21,4 @@ const loadEnvFile = (path: string) => {
 
 loadEnvFile(resolve(process.cwd(), ".env"))
 loadEnvFile(resolve(process.cwd(), "backend/.env"))
+loadEnvFile(resolve(process.cwd(), "../.env"))

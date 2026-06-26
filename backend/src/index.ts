@@ -2,6 +2,7 @@ import { serve } from "@hono/node-server"
 import { Hono } from "hono"
 import { cors } from "hono/cors"
 
+import { articlesRoute } from "./routes/articles"
 import { subscribersRoute } from "./routes/subscribers"
 import { subscribeRoute } from "./routes/subscribe"
 import { unsubscribeRoute } from "./routes/unsubscribe"
@@ -10,6 +11,7 @@ const app = new Hono()
 
 app.use("/*", cors({ origin: "http://localhost:3000" }))
 
+app.route("/articles", articlesRoute)
 app.route("/subscribe", subscribeRoute)
 app.route("/unsubscribe", unsubscribeRoute)
 app.route("/subscribers", subscribersRoute)

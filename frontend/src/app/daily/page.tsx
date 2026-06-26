@@ -8,11 +8,40 @@ import {
 } from "@/components/ui/card"
 import { ArrowRight, CalendarDays, ExternalLink, Mail } from "lucide-react"
 
-import { dailyArticles } from "@/components/digest-data"
 import { SiteNavbar } from "@/components/site-navbar"
 import { SubscribeForm } from "@/components/subscribe-form"
+import { api, type Article } from "@/lib/api"
 
-export default function DailyPage() {
+async function getArticles(): Promise<Article[]> {
+  try {
+    const res = await api.articles()
+    return res.data?.articles ?? []
+  } catch {
+    return []
+  }
+}
+
+function formatDate(timestamp: number | null): string {
+  if (!timestamp) return ""
+  return new Date(timestamp).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  })
+}
+
+function parseTags(tags: string | null): string[] {
+  if (!tags) return []
+  try {
+    return JSON.parse(tags) as string[]
+  } catch {
+    return []
+  }
+}
+
+export default async function DailyPage() {
+  const articles = await getArticles()
+
   return (
     <div className="min-h-svh bg-background text-foreground">
       <SiteNavbar />
@@ -53,45 +82,57 @@ export default function DailyPage() {
         <section className="border-b py-12 lg:py-16">
           <div className="mx-auto max-w-5xl px-6 md:px-8">
             <div className="space-y-4">
-              {dailyArticles.map((article) => (
-                <Card key={article.url} className="overflow-hidden">
-                  <CardHeader className="gap-4 sm:flex-row sm:items-start sm:justify-between">
-                    <div className="min-w-0 space-y-3">
-                      <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-                        <span>{article.date}</span>
-                        <span className="h-1 w-1 rounded-full bg-muted-foreground/50" />
-                        <a
-                          href={article.url}
-                          className="inline-flex items-center gap-1 rounded-full border bg-muted px-2.5 py-1 text-xs font-medium text-foreground underline-offset-4 hover:underline"
-                        >
-                          {article.source}
-                          <ExternalLink className="size-3" />
-                        </a>
+              {articles.map((article) => {
+                const tags = parseTags(article.tags)
+                return (
+                  <Card key={article.id} className="overflow-hidden">
+                    <CardHeader className="gap-4 sm:flex-row sm:items-start sm:justify-between">
+                      <div className="min-w-0 space-y-3">
+                        <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+                          <span>{formatDate(article.publishedAt)}</span>
+                          <span className="h-1 w-1 rounded-full bg-muted-foreground/50" />
+                          <a
+                            href={article.url}
+                            className="inline-flex items-center gap-1 rounded-full border bg-muted px-2.5 py-1 text-xs font-medium text-foreground underline-offset-4 hover:underline"
+                          >
+                            {article.source}
+                            <ExternalLink className="size-3" />
+                          </a>
+                        </div>
+                        <CardTitle className="text-xl leading-8 md:text-2xl">
+                          <a
+                            href={article.url}
+                            className="underline-offset-4 hover:underline"
+                          >
+                            {article.title}
+                          </a>
+                        </CardTitle>
                       </div>
-                      <CardTitle className="text-xl leading-8 md:text-2xl">
-                        <a
-                          href={article.url}
-                          className="underline-offset-4 hover:underline"
-                        >
-                          {article.headline}
-                        </a>
-                      </CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="grid gap-3 text-sm leading-6 text-muted-foreground md:grid-cols-3">
-                      {article.snippets.map((snippet) => (
-                        <li
-                          key={snippet}
-                          className="border-l-2 border-emerald-600 pl-3"
-                        >
-                          {snippet}
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardHeader>
+                    {(article.description || tags.length > 0) && (
+                      <CardContent>
+                        {article.description && (
+                          <p className="mb-3 text-sm leading-6 text-muted-foreground">
+                            {article.description}
+                          </p>
+                        )}
+                        {tags.length > 0 && (
+                          <ul className="flex flex-wrap gap-2">
+                            {tags.slice(0, 4).map((tag) => (
+                              <li
+                                key={tag}
+                                className="border-l-2 border-emerald-600 pl-3 text-sm leading-6 text-muted-foreground"
+                              >
+                                {tag}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </CardContent>
+                    )}
+                  </Card>
+                )
+              })}
             </div>
           </div>
         </section>
