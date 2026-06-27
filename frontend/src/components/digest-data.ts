@@ -1,52 +1,52 @@
 export const stories = [
   {
     headline:
-      "EU moves to put AWS and Azure under Digital Markets Act rules",
+      "US clears Anthropic's Mythos 5 for trusted organizations",
     summary:
-      "Reuters reports that EU antitrust regulators preliminarily concluded that Amazon Web Services and Microsoft Azure should be designated as gatekeepers under the Digital Markets Act. The move would bring stricter obligations around interoperability, data portability, and self-preferencing for two cloud platforms that underpin much of Europe's AI and software infrastructure.",
+      "Reuters reports that the U.S. government released Anthropic's powerful Mythos 5 model for use by some companies, government agencies, and research institutions after previously limiting access. The report says officials are moving toward a framework where advanced AI models can be shared with trusted U.S. organizations while tighter controls remain in place for broader releases.",
     source: "Reuters",
-    url: "https://www.reuters.com/business/retail-consumer/amazon-microsoft-cloud-computing-services-should-fall-under-eu-tech-rules-eu-2026-06-25/",
+    url: "https://www.reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26/",
     why:
-      "Cloud rules shape how developers deploy, migrate, and integrate AI systems. If AWS and Azure face stronger portability requirements, European teams could gain more leverage over lock-in and platform architecture choices.",
+      "Model access is becoming part of the developer platform stack: teams may need to design products around gated model availability, enterprise trust checks, and new national-security review processes for frontier AI.",
   },
   {
     headline:
-      "Amazon adds $13 billion for AI and cloud infrastructure in India",
+      "OpenAI previews GPT-5.6 Sol, Terra, and Luna for API builders",
     summary:
-      "Reuters reports that Amazon will invest an additional $13 billion in India by 2030 to expand AI and cloud infrastructure, focused on the Mumbai and Hyderabad regions. The new pledge brings Amazon's planned India investment to $48 billion through 2030 and follows CEO Andy Jassy's meeting with Prime Minister Narendra Modi.",
-    source: "Reuters",
-    url: "https://www.reuters.com/world/india/amazon-invest-additional-13-billion-india-2026-06-25/",
+      "OpenAI previewed GPT-5.6 Sol, Terra, and Luna as limited-access frontier models for ChatGPT, the API, and Codex users. The announcement positions Sol as the strongest reasoning model, describes new agentic capabilities such as ultra sub-agents, and notes that availability is initially restricted while rollout decisions are coordinated with government review.",
+    source: "OpenAI",
+    url: "https://openai.com/index/previewing-gpt-5-6-sol/",
     why:
-      "More hyperscale capacity in India matters for developers building regional AI products, latency-sensitive cloud apps, and enterprise services that need local infrastructure and data residency options.",
+      "Developers building with AI agents need to track model tiers, pricing, context limits, caching, and access restrictions because these choices directly affect coding workflows, automation reliability, and product rollout plans.",
+  },
+  {
+    headline: "Ukraine plans domestic AI compute capacity with Kyivstar",
+    summary:
+      "Reuters reports that Ukraine is working with telecom operator Kyivstar to build domestic AI computing capacity for government, public-service, and security use cases. Officials described the effort as a way to reduce dependence on foreign cloud resources while supporting AI systems that handle sensitive national data.",
+    source: "Reuters",
+    url: "https://www.reuters.com/business/media-telecom/ukraine-plans-domestic-ai-computing-capacity-with-kyivstar-2026-06-26/",
+    why:
+      "For developers working on public-sector, defense, or regulated AI systems, local compute and data-sovereignty requirements can shape architecture decisions as much as model quality or cloud pricing.",
   },
   {
     headline:
-      "US bill would force AI developers to report critical incidents",
+      "Malaysia seizes AI chip servers amid tighter export-control pressure",
     summary:
-      "Reuters reports that U.S. Representative Nathaniel Moran introduced the AI Incident Reporting Act, which would require AI model developers to report critical incidents to the Commerce Department within seven days. The bill targets events such as security breaches, systems bypassing human oversight, and public-safety threats.",
+      "Reuters reports that Malaysian customs seized 72 servers containing advanced AI chips worth about $12.9 million after officials said the equipment was believed to be headed for re-export. The case comes as governments scrutinize AI chip flows and attempt to prevent restricted hardware from reaching sanctioned destinations.",
     source: "Reuters",
-    url: "https://www.reuters.com/legal/litigation/us-lawmaker-proposes-bill-require-ai-companies-report-critical-incidents-2026-06-25/",
+    url: "https://www.reuters.com/world/china/malaysia-customs-seizes-ai-chips-worth-13-million-amid-us-export-concerns-2026-06-26/",
     why:
-      "Incident reporting could become part of the compliance baseline for frontier AI platforms, affecting logging, monitoring, risk assessment, and release processes for teams shipping AI products.",
+      "AI hardware supply chains affect developers indirectly through cloud capacity, inference cost, regional availability, and whether teams can rely on stable access to accelerators for training and production workloads.",
   },
   {
     headline:
-      "New Codex research shows AI agents moving beyond simple chat",
+      "Financial regulators build AI tools to keep pace with AI-driven cyber risk",
     summary:
-      "Axios reports on new research from OpenAI, Columbia, Duke, and the University of Pennsylvania showing that agent use is becoming more substantial, with Codex users delegating longer tasks. The report says software development remains the primary use case while some non-developers are also starting to use agents for complex work.",
-    source: "Axios",
-    url: "https://www.axios.com/2026/06/25/codex-agents-growth-openai",
-    why:
-      "For developers, this is another signal that agent workflows are shifting from demos to real task delegation, raising the importance of repo context, review discipline, and safe automation boundaries.",
-  },
-  {
-    headline: "Anthropic hires Orange's AI chief as it expands in Europe",
-    summary:
-      "Reuters reports that Anthropic hired the head of artificial intelligence from French telecom group Orange as part of its European expansion. The move adds senior telecom and enterprise AI experience to Anthropic while major model providers compete for regional talent, customers, and policy credibility.",
+      "Reuters reports that financial regulators are racing to develop their own AI tools as the technology raises the speed and scale of cyber threats, fraud, and market-abuse risks. Supervisors are using experiments such as hackathons and internal tooling projects to improve monitoring while balancing privacy and governance concerns.",
     source: "Reuters",
-    url: "https://www.reuters.com/business/media-telecom/anthropic-hires-oranges-ai-chief-amid-europe-push-2026-06-25/",
+    url: "https://www.reuters.com/business/finance/financial-regulators-scramble-counter-ai-rise-with-own-tools-2026-06-26/",
     why:
-      "Anthropic's Europe push matters to developers because regional AI leadership can affect model availability, enterprise partnerships, compliance posture, and local support for Claude-based products.",
+      "Developers in fintech and enterprise software should expect more AI-aware compliance, auditability, and security expectations, especially for systems that touch trading, customer data, or automated decision-making.",
   },
 ]
 
