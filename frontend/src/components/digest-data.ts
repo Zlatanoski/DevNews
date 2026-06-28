@@ -1,52 +1,23 @@
 export const stories = [
   {
     headline:
-      "US clears Anthropic's Mythos 5 for trusted organizations",
+      "Z.ai's GLM-5.2 narrows the AI cybersecurity gap with Mythos",
     summary:
-      "Reuters reports that the U.S. government released Anthropic's powerful Mythos 5 model for use by some companies, government agencies, and research institutions after previously limiting access. The report says officials are moving toward a framework where advanced AI models can be shared with trusted U.S. organizations while tighter controls remain in place for broader releases.",
-    source: "Reuters",
-    url: "https://www.reuters.com/technology/us-releases-anthropic-model-mythos-some-us-companies-semafor-reports-2026-06-26/",
+      "The Wall Street Journal reports that security researchers say Z.ai's GLM-5.2 can match the latest U.S. models in some software bug-finding and cybersecurity scenarios. The model's open-weight availability and lower operating costs are raising fresh questions about how quickly advanced vulnerability-discovery capabilities can spread outside tightly controlled frontier-model releases.",
+    source: "The Wall Street Journal",
+    url: "https://www.wsj.com/tech/ai/chinese-ai-anthropic-mythos-cybersecurity-574b02c2",
     why:
-      "Model access is becoming part of the developer platform stack: teams may need to design products around gated model availability, enterprise trust checks, and new national-security review processes for frontier AI.",
+      "Developers and security teams may soon face a much broader market of AI tools that can discover vulnerabilities, which changes expectations around secure coding, patch speed, model governance, and defensive automation.",
   },
   {
     headline:
-      "OpenAI previews GPT-5.6 Sol, Terra, and Luna for API builders",
+      "Japan and China pitch local Mythos-class cyber AI alternatives",
     summary:
-      "OpenAI previewed GPT-5.6 Sol, Terra, and Luna as limited-access frontier models for ChatGPT, the API, and Codex users. The announcement positions Sol as the strongest reasoning model, describes new agentic capabilities such as ultra sub-agents, and notes that availability is initially restricted while rollout decisions are coordinated with government review.",
-    source: "OpenAI",
-    url: "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "The Times of India reports that Japan's Sakana AI and China's 360 are promoting new AI systems aimed at cybersecurity and agent orchestration after U.S. export controls limited access to Anthropic's most advanced models. Sakana's Fugu is described as an orchestration model for autonomous agents, while 360's Tulongfeng and Yitianzhen target vulnerability discovery and automated incident response.",
+    source: "The Times of India",
+    url: "https://timesofindia.indiatimes.com/technology/tech-news/chinese-and-japanese-companies-launch-ai-models-claim-they-are-as-powerful-as-anthropics-mythos/articleshow/132045152.cms",
     why:
-      "Developers building with AI agents need to track model tiers, pricing, context limits, caching, and access restrictions because these choices directly affect coding workflows, automation reliability, and product rollout plans.",
-  },
-  {
-    headline: "Ukraine plans domestic AI compute capacity with Kyivstar",
-    summary:
-      "Reuters reports that Ukraine is working with telecom operator Kyivstar to build domestic AI computing capacity for government, public-service, and security use cases. Officials described the effort as a way to reduce dependence on foreign cloud resources while supporting AI systems that handle sensitive national data.",
-    source: "Reuters",
-    url: "https://www.reuters.com/business/media-telecom/ukraine-plans-domestic-ai-computing-capacity-with-kyivstar-2026-06-26/",
-    why:
-      "For developers working on public-sector, defense, or regulated AI systems, local compute and data-sovereignty requirements can shape architecture decisions as much as model quality or cloud pricing.",
-  },
-  {
-    headline:
-      "Malaysia seizes AI chip servers amid tighter export-control pressure",
-    summary:
-      "Reuters reports that Malaysian customs seized 72 servers containing advanced AI chips worth about $12.9 million after officials said the equipment was believed to be headed for re-export. The case comes as governments scrutinize AI chip flows and attempt to prevent restricted hardware from reaching sanctioned destinations.",
-    source: "Reuters",
-    url: "https://www.reuters.com/world/china/malaysia-customs-seizes-ai-chips-worth-13-million-amid-us-export-concerns-2026-06-26/",
-    why:
-      "AI hardware supply chains affect developers indirectly through cloud capacity, inference cost, regional availability, and whether teams can rely on stable access to accelerators for training and production workloads.",
-  },
-  {
-    headline:
-      "Financial regulators build AI tools to keep pace with AI-driven cyber risk",
-    summary:
-      "Reuters reports that financial regulators are racing to develop their own AI tools as the technology raises the speed and scale of cyber threats, fraud, and market-abuse risks. Supervisors are using experiments such as hackathons and internal tooling projects to improve monitoring while balancing privacy and governance concerns.",
-    source: "Reuters",
-    url: "https://www.reuters.com/business/finance/financial-regulators-scramble-counter-ai-rise-with-own-tools-2026-06-26/",
-    why:
-      "Developers in fintech and enterprise software should expect more AI-aware compliance, auditability, and security expectations, especially for systems that touch trading, customer data, or automated decision-making.",
+      "Regional AI stacks can affect which models, agent frameworks, and security tools developers can use in production, especially when export controls or local sovereignty requirements make single-provider architectures risky.",
   },
 ]
 
