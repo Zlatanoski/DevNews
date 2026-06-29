@@ -1,25 +1,4 @@
-export const stories = [
-  {
-    headline:
-      "Z.ai's GLM-5.2 narrows the AI cybersecurity gap with Mythos",
-    summary:
-      "The Wall Street Journal reports that security researchers say Z.ai's GLM-5.2 can match the latest U.S. models in some software bug-finding and cybersecurity scenarios. The model's open-weight availability and lower operating costs are raising fresh questions about how quickly advanced vulnerability-discovery capabilities can spread outside tightly controlled frontier-model releases.",
-    source: "The Wall Street Journal",
-    url: "https://www.wsj.com/tech/ai/chinese-ai-anthropic-mythos-cybersecurity-574b02c2",
-    why:
-      "Developers and security teams may soon face a much broader market of AI tools that can discover vulnerabilities, which changes expectations around secure coding, patch speed, model governance, and defensive automation.",
-  },
-  {
-    headline:
-      "Japan and China pitch local Mythos-class cyber AI alternatives",
-    summary:
-      "The Times of India reports that Japan's Sakana AI and China's 360 are promoting new AI systems aimed at cybersecurity and agent orchestration after U.S. export controls limited access to Anthropic's most advanced models. Sakana's Fugu is described as an orchestration model for autonomous agents, while 360's Tulongfeng and Yitianzhen target vulnerability discovery and automated incident response.",
-    source: "The Times of India",
-    url: "https://timesofindia.indiatimes.com/technology/tech-news/chinese-and-japanese-companies-launch-ai-models-claim-they-are-as-powerful-as-anthropics-mythos/articleshow/132045152.cms",
-    why:
-      "Regional AI stacks can affect which models, agent frameworks, and security tools developers can use in production, especially when export controls or local sovereignty requirements make single-provider architectures risky.",
-  },
-]
+export const stories = []
 
 export const plans = [
   {
